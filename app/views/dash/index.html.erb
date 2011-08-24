@@ -1,0 +1,6 @@
+<% flash.each do |key, msg| %>
+  <div style="background-color: lightblue; " class="<%=key%>">
+    <p><%= msg %></p>
+  </div>
+<% end if flash.present? %>
+<% flash.discard %>

@@ -6,4 +6,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require modernizr-2.0.6.min
+//= jquery.collapse
+//= jquery.expand
+//= async_response
 //= require_tree .

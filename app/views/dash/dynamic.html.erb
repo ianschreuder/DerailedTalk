@@ -1,0 +1,33 @@
+<!-- http://pivotallabs.com/users/jb/blog/articles/1134-more-page-dynamics-less-client-logic -->
+
+<style>
+  #a {
+    float: left;
+    border: 1px solid #900;
+    width: 200px;
+  }
+  #b {
+    float: left;
+    border: 1px solid #900;
+    width: 300px;
+    margin-left: 20px;
+  }
+</style>
+
+<div>
+  <p>Lots of page content that doesn't need reloading</p>
+</div>
+
+<div data-contentkey="feeds" id="a">
+  <ul>
+    <li>Something nifty</li>
+    <li>Something droll</li>
+    <li><%=link_to("Update Page", "/dynamic_update", :remote=>true)%>
+  </ul>
+</div>
+
+<div id="b">
+  <ul data-contentkey="mainstuff">
+    <li><b>The Magdalen Reading</b> is one of three surviving fragments of a large mid-15th century oil-on-oak altarpiece by the early Netherlandish painter Rogier van der Weyden. Completed some time between 1435 and 1438, it has been in the National Gallery, London since 1860. It shows a woman with the pale skin, high cheek bones and oval eyelids typical of the idealised portraits of noble women of the period.</li>
+  </ul>
+</div>
